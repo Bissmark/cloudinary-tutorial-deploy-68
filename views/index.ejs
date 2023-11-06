@@ -1,0 +1,11 @@
+<%- include('./partials/header') %>
+
+  <h1><%= title %></h1>
+  <p>Welcome to <%= title %></p>
+
+<form action="/users" enctype="multipart/form-data" method="POST">
+  <div>
+    <input type="file" name="image">
+    <button type="submit">Upload</button>
+  </div>
+</form>
